@@ -1,0 +1,186 @@
+/*Global*/
+body{
+    width: 500px;
+    margin: 100px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin: 0px;
+    font-weight: normal;
+}
+
+label{
+    display: block; /*add this to make inline element becomes block (also allow padding) */
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+input{
+    width: 400px;
+    height: 20px;
+}
+
+section{
+    background-color:rgb(240, 240, 205);
+    padding: 35px;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+/*Specific: Pricing Calculator*/
+
+.total-cost{
+    text-align: right;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px 20px 0px 0px;
+}
+
+#quantity::-moz-range-progress{
+    background-color: aquamarine;
+}
+
+.show-quantity{
+    width: 20px;
+    height: 15px;
+    display: inline-block; /*make it block but still inline (allow change width and height but still inline)*/
+    background-color:aquamarine;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*Specific: Crazy buttons*/
+.crazy-button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    background-color:aqua;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    position: absolute;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+}
+
+
+/*Specific: stopwatch*/
+.stopwatch-center{
+    text-align: center;
+}
+
+.stopwatch{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.start{
+    background-color: chocolate;
+    color:azure;
+    border:rgb(175, 82, 16) 2px solid;
+}
+
+.stop{
+    background-color: blueviolet;
+    color:azure;
+    border: rgb(84, 21, 143) 2px solid;
+}
+
+.reset{
+    background: none;
+    color:royalblue;
+}
+
+/*Specific: Accordion*/
+.accordion-body{
+    width: auto;
+    margin: 0px auto;
+    background-color: rgb(233, 230, 230);
+}
+
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 1000px;
+    margin: 30px auto;
+    padding: 60px;
+    border-radius: 4px;
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.q-a
+{
+    position: relative;
+    border-top: rgb(233, 230, 230) 1px solid;
+    padding: 20px;
+}
+
+.question{
+    color:crimson;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.question:hover{
+    color:rgb(231, 86, 115);
+}
+
+.toggle{
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+}
+
+.answer{
+    line-height: 24px;
+    max-height: 0px;
+    overflow: hidden; 
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+}
+
+.opening{
+    max-height: 300px;
+}
+
+/*Specific: Scroll Progress*/
+.scrolling-progress-body{
+    width: auto;
+    margin: 0px auto;
+    background-color: rgb(233, 230, 230);
+}
+
+.scrolling-progress-article{
+    width: 1000px;
+    height: 6000px;
+    margin: 60px auto;
+    padding: 80px;
+    border-radius: 4px;
+    background-color: white;
+    line-height: 20px;
+}
+
+.scrolling-progress-bar{
+    height: 8px;
+    width: 500px;
+    margin: 0px;
+    background-color: turquoise;
+    position:fixed;
+    top: 0px;
+}

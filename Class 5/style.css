@@ -1,0 +1,19 @@
+.not-display{
+    display: none;
+}
+
+#user-info-input{
+    width: clamp(275px, 50%, 750px);
+    height: 2rem;
+    border-radius: 5px;
+}
+
+button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    background-color:limegreen;
+    color:aliceblue;
+    font-size: 16px;
+    cursor:pointer;
+}

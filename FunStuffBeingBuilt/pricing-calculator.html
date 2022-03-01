@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pricing Calculator</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h1>How much do your dresses cost?</h1>
+        <form>
+            <div class="price-input">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" min="0">
+            </div>
+            <div class="quantity-input">
+                <label for="quantity">
+                    Quantity
+                    <span class="show-quantity"></span>
+                </label>
+                <input type="range" id="quantity" name="quantity" min="1" max="10">
+            </div>
+        </form>
+        <p class="total-cost">$0</p>
+    </section>
+    
+</body>
+</html>
+<script src="scripts/pricing-calculator.js"></script>
