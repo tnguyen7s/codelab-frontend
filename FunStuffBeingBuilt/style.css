@@ -1,7 +1,7 @@
 /*Global*/
 body{
-    width: 500px;
-    margin: 100px auto;
+    margin: 0px auto;
+    padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -36,6 +36,10 @@ button{
     margin: 1px;
 }
 
+.container{
+    width: 500px;
+    margin: 20px auto;
+}
 /*Specific: Pricing Calculator*/
 
 .total-cost{
@@ -146,6 +150,7 @@ button{
     position: absolute;
     right: 10px;
     font-size: 24px;
+    padding: 10px;
 }
 
 .answer{
@@ -186,7 +191,27 @@ button{
 }
 
 /*Navigation*/
-.navigation-bar li{
-    list-style-type:none;
-    color: red;
+.navigation-bar ul{
+    list-style-type: none;
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:rgb(206, 245, 225);
+
+    margin: 0px;
+    padding: 20px;
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    color:rgb(24, 212, 115);
+
+    padding: 20px;
+    text-align:left;
+    font-size: 20px;
+}
+
+.navigation-bar a:hover{
+    color:rgb(26, 112, 68);
 }
