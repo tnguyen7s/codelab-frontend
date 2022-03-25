@@ -12,4 +12,12 @@ export class ArticleComponent
   content="some content goes here";
   isTechRelated=true;
 
+  changeBackground()
+  {
+    return this.isTechRelated? "blue":"yellow";
+  }
+  
+  onChangeIsTechRelated(){
+    this.isTechRelated = !this.isTechRelated;
+  }
 }
