@@ -1,0 +1,94 @@
+* Download Node.js 
++ backend Javascript runtime env 
++ execute Javascript code outside of the browser
++ provides npm - node package manager that find and manage packages/dependencies
+to check if node.js is installed succesfully: node -v (node version)
+
+* Install typescript locally (inside the project) using npm:
+nmp init -y
+cd project_folder
+npm install typescript
+
+Using .gitignore to declare folders to be hidden when pushing code to the remote repo
+
+
+* main.ts cannot run on the browser. 
+After writing code in typescript and making sure that there is no error,
+we need to compile the code to Javascript to be able to run it in the browser using command:
+npx tsc main.ts
+
+
+* PRIMITIVE TYPES
+// number
+let a : number = 5;
+let a = 5; // inferenced as a number
+
+// string
+let s : string = 'hi';
+let s = 'hi'; // inferenced as a string
+
+// boolean
+let b : boolean = true;
+
+* Type alias
+type Food = {
+    name : string,
+    ingredients: string[],
+    timeToCook: number
+};
+
+
+* COMPLEX TYPES
+// array
+let foods : string[] = ['chicken curry', 'vegetable soup']
+let foods : Food[]; // not assigned
+
+// object
+let food : Food = {
+    name: "chicken curry",
+    ingredients: ["chicken", "carrot", "potatoes", "coconut milk"],
+    timeToCook: 60
+}
+
+* UNION 
+let choice : number | boolean;
+
+* Function and parameters
+function makeNumber(...digits:number[]) : string{
+    return digits.map(d=>d+"").join("");
+}
+
+* generic
+function getId<T> (value:T): T{
+
+}
+
+* interface and class
+// interface: defines the attributes and behaviors of classes that implement this interface
+interface IFood{
+    name: string,
+    ingredients: string[],
+    timeToCook: number,
+    currentIngredientsHave: string[],
+    addIngredient: (i: string) => void,
+    getCurrentIngrediensHave: (void) => string[]
+}
+
+// class: blueprint for an objects, allow create instances of the object
+class Food implements IFood{
+    constructor(private name: string, private ingredients: string[], private timeToCook: number){
+
+    } //private fields for encapsulation, cannot directly access to the data
+
+    function addIngredient(ingredient: string){
+        if (currentIngredientsHave.index(ingredient)<0){
+            currentIngredientsHave.append(ingredient);   
+        }
+    }
+
+    function getCurrentIngrediensHave():string[]
+    {
+        return currentIngredientsHave.slice(); // return a copy
+    }
+}
+
