@@ -1,0 +1,5 @@
+<app-bookshelf (bookSelected)="onChangeBook($event)"></app-bookshelf>
+<p *ngIf="book; else infoText">{{book.title}} {{book.author}}</p>
+<ng-template #infoText>
+  <p>No book selected!</p>
+</ng-template>

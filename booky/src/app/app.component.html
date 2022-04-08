@@ -1,0 +1,11 @@
+<div class="container">
+  <app-navbar (pageSelected)="pageSelected=$event"></app-navbar>
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <app-bookshelf *ngIf="pageSelected=='bookshelf' else showLibrary"></app-bookshelf>
+      <ng-template #showLibrary>
+        <app-book-library></app-book-library>
+      </ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6">
+    <input [disabled]="isDisabled">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6" style="margin-top: 5px">
+    <button class="btn btn-primary" (click)="isDisabled=!isDisabled">
+      Click me to change the value of isDisabled! {{isDisabled? "Currently disabled.":"Currently Enabled"}}
+    </button>
+  </div>
+</div>
+
+

@@ -1,0 +1,6 @@
+<a *ngFor="let book of books" (click)="onClick(book)">
+  <div style="border: solid black 1px; margin-top: 10px;">
+  <p>Title: {{book.title}}</p>
+  <p>Author: {{book.author}}</p>
+  </div>
+</a>

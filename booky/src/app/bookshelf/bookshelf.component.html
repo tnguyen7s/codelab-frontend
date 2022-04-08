@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-6">
+    <app-booklist (bookSelected)="bookSelected=$event"></app-booklist>
+  </div>
+  <div class="col-md-6">
+    <app-bookdetails *ngIf="bookSelected else infoText" [book]="bookSelected"></app-bookdetails>
+    <ng-template #infoText>
+      <p>
+        Please select a book!
+      </p>
+    </ng-template>
+  </div>
+</div>
