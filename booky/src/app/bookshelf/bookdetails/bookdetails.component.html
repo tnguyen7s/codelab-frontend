@@ -30,6 +30,22 @@
 
 <div class="row">
   <div class="col-md-12">
-    <button type="button" class="btn btn-primary">Edit book</button>
+    <div class="dropdown" appDropdown>
+      <button
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Edit Book
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item">Update Book</a>
+        <a class="dropdown-item">Delete Book</a>
+      </div>
+    </div>
   </div>
 </div>
